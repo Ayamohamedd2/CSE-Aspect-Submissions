@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class loggingAspect {
 
-    @Before("execution(* com.example.demo.Controlllers.Controller.*(..))")  // FIXED
+    @Before("execution(* com.example.demo.Controlllers.Controller.*(..))")
     public void logBefore(JoinPoint joinPoint) {
-        System.out.println(">>> Aspect Triggered Before Method: " + joinPoint.getSignature().getName());
+        System.out.println(">>> LoggingAspect: Executing before method : " + joinPoint.getSignature().getName());
 
 
     }
