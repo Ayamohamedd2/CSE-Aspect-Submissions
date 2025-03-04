@@ -12,5 +12,7 @@ public class loggingAspect {
     @Before("execution(* com.example.demo.Controlllers.Controller.*(..))")  // FIXED
     public void logBefore(JoinPoint joinPoint) {
         System.out.println(">>> Aspect Triggered Before Method: " + joinPoint.getSignature().getName());
+
+
     }
 }
