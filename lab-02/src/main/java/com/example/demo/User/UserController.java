@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "api/v1/users")
+@RequestMapping(path = "api/lab2aya")
 public class UserController {
 
     private final UserService userService;
